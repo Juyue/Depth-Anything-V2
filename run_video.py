@@ -62,7 +62,7 @@ if __name__ == '__main__':
         else: 
             output_width = frame_width * 2 + margin_width
         
-        output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + '.mp4')
+        output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + 'depth_anything_2.mp4')
         out = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*"mp4v"), frame_rate, (output_width, frame_height))
         
         while raw_video.isOpened():
